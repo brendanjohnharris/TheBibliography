@@ -5,4 +5,6 @@
 *.html
 *.log
 *.svg
+*.sav
+.*lock.*
 
