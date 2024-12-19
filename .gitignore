@@ -1,10 +1,2 @@
-*.pdf
-*.PDF
-*.bak
-*.tmp
-*.html
-*.log
-*.svg
-*.sav
-.*lock.*
+**/**/*
 
