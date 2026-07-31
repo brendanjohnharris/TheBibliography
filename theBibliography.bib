@@ -4197,19 +4197,19 @@
   publisher        = {Frontiers Media SA},
 }
 
-@article{Kim2017,
-    author           = {Kim, Yongsoo and Yang, Guangyu Robert and Pradhan, Kith and Venkataraju, Kannan Umadevi and Bota, Mihail and García Del Molino, Luis Carlos and Fitzgerald, Greg and Ram, Keerthi and He, Miao and Levine, Jesse Maurica and Mitra, Partha and Huang, Z. Josh and Wang, Xiao-Jing and Osten, Pavel},
-    title            = {Brain-wide Maps Reveal Stereotyped Cell-Type-Based Cortical Architecture and Subcortical Sexual Dimorphism},
-    issn             = {0092-8674},
-    number           = {2},
-    pages            = {456--469.e22},
-    date             = {2017},
-    doi              = {10.1016/j.cell.2017.09.020},
-    file             = {:Kim2017.pdf:PDF},
-    groups           = {Cell Densities},
-    journaltitle     = {Cell},
-    modificationdate = {2023-02-06T16:55:51},
-    publisher        = {Elsevier BV},
+@Article{Kim2017,
+  author           = {Kim, Yongsoo and Yang, Guangyu Robert and Pradhan, Kith and Venkataraju, Kannan Umadevi and Bota, Mihail and García Del Molino, Luis Carlos and Fitzgerald, Greg and Ram, Keerthi and He, Miao and Levine, Jesse Maurica and Mitra, Partha and Huang, Z. Josh and Wang, Xiao-Jing and Osten, Pavel},
+  date             = {2017},
+  journaltitle     = {Cell},
+  title            = {Brain-wide Maps Reveal Stereotyped Cell-Type-Based Cortical Architecture and Subcortical Sexual Dimorphism},
+  doi              = {10.1016/j.cell.2017.09.020},
+  issn             = {0092-8674},
+  number           = {2},
+  pages            = {456--469.e22},
+  file             = {:Kim2017.pdf:PDF},
+  groups           = {Cell Densities, Working regime},
+  modificationdate = {2026-07-31T12:34:21},
+  publisher        = {Elsevier BV},
 }
 
 @Article{Sethi2017,
@@ -20740,8 +20740,8 @@
   url              = {http://dx.doi.org/10.7554/eLife.19332},
   volume           = {5},
   creationdate     = {2024-01-29T13:58:33},
-  groups           = {Criticality, PhD},
-  modificationdate = {2025-12-08T18:47:08},
+  groups           = {Criticality, PhD, Working regime},
+  modificationdate = {2026-07-31T12:34:29},
   publisher        = {eLife Sciences Publications, Ltd},
 }
 
@@ -28247,8 +28247,8 @@ scale dynamics and hierarchical visual processing.},
   url              = {https://github.com/brendanjohnharris/SpatiotemporalMotifs.jl},
   volume           = {17},
   creationdate     = {2026-04-24T19:53:33},
-  groups           = {Mine, Spatiotemporal motifs, Papers, CurriculumVitae, PhD},
-  modificationdate = {2026-04-24T19:54:50},
+  groups           = {Mine, Spatiotemporal motifs, Papers, CurriculumVitae, PhD, Working regime},
+  modificationdate = {2026-07-31T12:31:34},
   publisher        = {Springer Science and Business Media LLC},
   type             = {journal-article},
 }
@@ -28756,6 +28756,80 @@ scale dynamics and hierarchical visual processing.},
   modificationdate = {2026-07-02T13:04:01},
   publisher        = {Springer Science and Business Media LLC},
   type             = {journal-article},
+}
+
+% Entries present in the CURRENT working ~/Notebook/Papers/theBibliography.bib
+% but ABSENT from the last commit (HEAD). Extracted 2026-07-31.
+%
+% Purpose: after 'git checkout HEAD -- theBibliography.bib' restores the complete
+% 1669-entry library, append these 4 so nothing unique to the working copy is lost.
+%
+% NOT included by design: the 234 entries that exist in BOTH versions but differ in
+% content. Checking out HEAD takes HEAD's version of those. The one known casualty is
+% Siegle2021, whose 'Working regime' group tag exists only in the working copy --
+% recovered by the separate manual re-tagging step, along with Harris2019, Harris2024,
+% Harris2026, Murray2014 and Wang2020.
+
+@article{Alam2024,
+    author           = {Alam, Imran and Harris, Brendan and Cahill, Patrick and Cliff, Oliver and Markicevic, Marija and Zerbi, Valerio and Fulcher, Ben D.},
+    date             = {2024-07},
+    journaltitle     = {bioRxiv},
+    title            = {Canonical time-series features for characterizing biologically informative dynamical patterns in fMRI},
+    doi              = {10.1101/2024.07.14.603477},
+    eprint           = {https://www.biorxiv.org/content/early/2024/07/17/2024.07.14.603477.full.pdf},
+    url              = {https://github.com/brendanjohnharris/CatchaMouse16.jl},
+    abstract         = {The interdisciplinary time-series analysis literature encompasses thousands of statistical features for quantifying interpretable properties of dynamical data. But for any given application, it is likely that just a small subset of informative time-series features is required to capture the dynamical quantities of interest. So, while comprehensive libraries of time-series features have been developed, it is useful to construct reduced and computationally efficient subsets for specific applications. In this work, we demonstrate a systematic process to deduce such a reduced set, focused on the problem of distinguishing changes to functional Magnetic Resonance Imaging (fMRI) time series caused by a range of experimental manipulations of excitatory and inhibitory neural activity in mouse cortical circuits. We reduce a comprehensive library of over 7000 candidate time-series features down to a subset of 16 features, which we call catchaMouse16, that aims to both: (i) accurately characterize biologically relevant properties of fMRI time series; and (ii) minimize inter-feature redundancy. The catchaMouse16 feature set accurately classifies experimental perturbations of neuronal activity from fMRI recordings, and also shows strong generalization performance on an unseen mouse and human resting-state fMRI data where it tracks spatial variations in excitatory and inhibitory cortical cell densities, often with greater statistical power than the full hctsa feature set. We provide an efficient, open-source implementation of the catchaMouse16 feature set in C (achieving an approximately 60 times speed-up relative to the native Matlab code of the same features), with wrappers for Python and Matlab. This work demonstrates a procedure to reduce a large candidate time-series feature set down to the key statistical properties of mouse fMRI dynamics that can be used to efficiently quantify and interpret informative dynamical patterns in neural time series.Competing Interest StatementThe authors have declared no competing interest.},
+    creationdate     = {2025-04-30T23:15:20},
+    elocation-id     = {2024.07.14.603477},
+    groups           = {Papers, CurriculumVitae},
+    modificationdate = {2025-04-30T23:22:00},
+    publisher        = {Cold Spring Harbor Laboratory},
+}
+
+@funding{Harris,
+    author           = {Brendan Harris},
+    creationdate     = {2023-11-06T13:34:53},
+    date             = {2023-03/2023-12},
+    funder           = {Dr. Cameron Higgins},
+    groups           = {CurriculumVitae},
+    keywords         = {Industry},
+    modificationdate = {2025-04-30T23:18:53},
+    note             = {Worked on a casual basis writing Matlab code to interface with EEG headsets, infer the activation of brain networks, and implement neurofeedback for the monitoring and treatment of depression},
+    role             = {Software developer},
+    title            = {Resonait Medical Technologies},
+}
+
+@presentation{Harrisb,
+    abstract         = {From single-cell neural recordings to waveforms of magnetic fields in the solar wind, non-stationarity in high-dimensional time series often signifies change in the physical parameters of a system. How can we construct intuitive descriptions of arbitrary non-stationarity in time-series data, then use this summary to infer changes in a system’s underlying parameters? In this talk I will present our new method for quantifying non-stationary variation in terms of low-dimensional time-series features, which allows us to understand how the dynamics of a complex system change over time and space. Our method accurately tracks a broad variety of non-stationarities in a range of simulated test systems, where non-stationarity was controlled by ground-truth parameter values. I will also show how we analyse high-dimensional, spatio-temporal Neuropixels recordings to automatically uncover regions of the brain that transition between distinct dynamical states as environmental parameters change over time. Our feature-based approach to dimensionality reduction provides a comprehensive but interpretable summary of non-stationarity that captures meaningful changes in the dynamical properties as well as the underlying parameters of time-varying systems.},
+    author           = {Brendan Harris and Ben Fulcher},
+    booktitle        = {31st Annual Computational Neuroscience Meeting: CNS*2022},
+    creationdate     = {2023-11-01T13:05:04},
+    date             = {2022-07},
+    groups           = {Conferences, Mine, CurriculumVitae},
+    institution      = {31st Annual Computational Neuroscience Meeting: CNS*2022},
+    modificationdate = {2025-04-30T23:18:53},
+    note             = {In workshop 'Highly comparative analysis of neural dynamics'.},
+    organization     = {Organization for Computational Neuroscience},
+    pages            = {P36},
+    presentationtype = {Workshop talk},
+    presenter        = {Brendan Harris},
+    publisher        = {Organization for Computational Neuroscience},
+    title            = {Inferring parametric variation across non-stationary neural time series},
+}
+
+@article{Lippi2017,
+    author           = {Lippi, R. and Howard, S. C. and Barron, H. and Easton, C. D. and Madsen, I. C. and Waddington, L. J. and Vogt, C. and Hill, M. R. and Sumby, C. J. and Doonan, C. J. and Kennedy, D. F.},
+    title            = {Highly active catalyst for CO2 methanation derived from a metal organic framework template},
+    pages            = {12990-12997},
+    volume           = {5},
+    abstract         = {The conversion of CO2 into chemicals of commercial interest is a rapidly expanding area of research. Here{,} we present a highly active and stable CO2 methanation catalyst that is derived from a Ru-impregnated zirconium-based metal–organic framework (MOF) material. The Ru-doped MOF is transformed{,} under reaction conditions{,} into an active catalyst which yields CO2 conversions of 96% and a CH4 selectivity of 99%. We demonstrate that the final catalyst was composed of a mixture of Ru-nanoparticles supported on monoclinic and tetragonal ZrO2 nanoparticles. Notably{,} such catalytic activity has only been achieved using the MOF templating strategy. Catalysts of the same composition were synthesized via different methods but were less active for CO2 methanation.},
+    date             = {2017},
+    doi              = {10.1039/C7TA00958E},
+    groups           = {AEP},
+    issue            = {25},
+    journaltitle     = {Journal of Materials Chemistry A: Materials for Energy and Sustainability},
+    modificationdate = {2023-10-26T19:48:56},
+    publisher        = {The Royal Society of Chemistry},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
